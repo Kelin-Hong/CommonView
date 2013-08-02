@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="common_white">#ffffff</color>
+       <color name="tab_indicator_text_unselected">#aac5d7</color>
+      <color name="tab_indicator_text_selected">#70b50d</color>
+        <color name="page_viewer_margin_color">#053e5d</color>
+</resources>

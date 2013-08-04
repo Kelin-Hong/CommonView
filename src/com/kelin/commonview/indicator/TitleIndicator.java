@@ -20,10 +20,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.commonview.R;
-import com.example.commonview.R.id;
-import com.example.commonview.R.layout;
-import com.example.commonview.R.styleable;
+import com.kelin.commonview.R;
+
 
 
 

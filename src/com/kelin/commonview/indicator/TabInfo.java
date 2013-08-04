@@ -2,10 +2,11 @@ package com.kelin.commonview.indicator;
 
 import java.lang.reflect.Constructor;
 
+import com.kelin.commonview.indicator.fragment.BaseFragment;
+
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.kelin.commonview.BaseFragment;
 
 public class TabInfo implements Parcelable {
 

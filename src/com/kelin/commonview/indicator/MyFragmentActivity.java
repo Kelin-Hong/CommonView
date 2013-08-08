@@ -12,12 +12,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
-import android.util.Log;
 import android.view.ViewGroup;
 import android.view.Window;
 
-import com.example.commonview.R;
-import com.kelin.commonview.BaseFragment;
+import com.kelin.commonview.R;
+import com.kelin.commonview.indicator.fragment.BaseFragment;
 
 
 public abstract class  MyFragmentActivity extends FragmentActivity implements OnPageChangeListener{

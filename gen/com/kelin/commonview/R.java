@@ -234,7 +234,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int activity_main=0x7f030001;
         public static final int activity_tab_indicator=0x7f030002;
         public static final int fragment_sample=0x7f030003;
-        public static final int title_flow_indicator=0x7f030004;
+        public static final int fragment_tab_activity=0x7f030004;
+        public static final int title_flow_indicator=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f0b0000;

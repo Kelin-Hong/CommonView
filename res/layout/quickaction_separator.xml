@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/quickaction2_separator_height"
+    android:maxHeight="4dip"
+    android:background="@drawable/quickaction2_sep"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingBottom="0dp"
+    android:paddingTop="0dp" >
+
+</LinearLayout>

@@ -4,5 +4,6 @@
     <string name="app_name">CommonView</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+       <string name="new_function_tip" translatable="false">New</string>
 
 </resources>

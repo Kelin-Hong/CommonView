@@ -91,7 +91,7 @@ public class  TitleIndicatorActivity extends FragmentActivity implements OnPageC
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+       // requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         try {
           //  mHasAnimation = getIntent().getBooleanExtra(SingleActivity.EXTRA_HAS_ANIM, false);
@@ -115,7 +115,6 @@ public class  TitleIndicatorActivity extends FragmentActivity implements OnPageC
         mPager.setAdapter(null);
         mPager = null;
         mIndicator = null;
-
         super.onDestroy();
     }
 

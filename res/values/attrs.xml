@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <declare-styleable name="CircleProgressBar">
+           <attr name="mode" format="color|reference" />
+    </declare-styleable>
  <declare-styleable name="TitleIndicator">
         <attr name="titlePadding" format="dimension" />
         <!-- Left/right padding of not active view titles. -->

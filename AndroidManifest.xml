@@ -24,16 +24,49 @@
         </activity>
         <activity
             android:name=".indicator.activity.IndicatorListActivity"
-            android:label="indicator">
+            android:label="Main/Indicator" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.kelin.commonview.main.SAMPLE" />
+            </intent-filter>
         </activity>
-       <activity
+        <activity
             android:name=".indicator.activity.TitleIndicatorActivity"
-            android:label="title indicator">
-       </activity>
-       <activity
+            android:label="Indicator/Title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.kelin.commonview.indicator.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".indicator.activity.CirclePageIndicatorActivity"
-            android:label="circle indicator">
-       </activity>
+            android:label="Indicator/Circle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.kelin.commonview.indicator.SAMPLE" />
+            </intent-filter>
+        </activity>
+          <activity
+            android:name=".progressbar.CircleProgressBarActivity"
+            android:label="ProgressBar/Circle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.kelin.commonview.progressbar.SAMPLE" />
+            </intent-filter>
+        </activity>
+             <activity
+            android:name=".progressbar.ProgressBarListActivity"
+            android:label="Main/ProgressBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.kelin.commonview.main.SAMPLE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

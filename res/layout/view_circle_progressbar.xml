@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar 
+        android:id="@+id/progressbar"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:indeterminateDrawable="@drawable/circle_progress_rotate_drawable"/>
+     <TextView
+        android:id="@+id/msg_inside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/msg_below"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"/>
+    </merge>
+    
+

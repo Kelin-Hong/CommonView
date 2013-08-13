@@ -1,4 +1,4 @@
-package com.kelin.commonview;
+package com.kelin.commonview.progressbar;
 
 import java.text.Collator;
 import java.util.ArrayList;
@@ -15,24 +15,22 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class MainActivity extends ListActivity {
-    private static final String INTENT_DEFAULT = "com.kelin.commonview.main.SAMPLE";
+public class ProgressBarListActivity extends ListActivity {
+    private static final String INTENT_DEFAULT = "com.kelin.commonview.progressbar.SAMPLE";
     List<Map<String, Object>> mData = new ArrayList<Map<String, Object>>();
-    List<String> mTitleList = new ArrayList<String>();
-
+    List<String> mTitleList=new ArrayList<String>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         getData();
-        Iterator<Map<String, Object>> it = mData.iterator();
-        while (it.hasNext()) {
+        Iterator<Map<String, Object>> it=mData.iterator();
+        while(it.hasNext()){
             mTitleList.add(it.next().get("title").toString());
-
+            
         }
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, mTitleList);
@@ -74,11 +72,12 @@ public class MainActivity extends ListActivity {
         }
     };
 
+
+
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         // TODO Auto-generated method stub
         super.onListItemClick(l, v, position, id);
-        startActivity((Intent) mData.get(position).get("intent"));
+        startActivity((Intent)mData.get(position).get("intent"));
     }
-
 }

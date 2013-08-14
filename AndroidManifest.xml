@@ -49,7 +49,7 @@
                 <category android:name="com.kelin.commonview.indicator.SAMPLE" />
             </intent-filter>
         </activity>
-          <activity
+        <activity
             android:name=".progressbar.CircleProgressBarActivity"
             android:label="ProgressBar/Circle" >
             <intent-filter>
@@ -58,15 +58,16 @@
                 <category android:name="com.kelin.commonview.progressbar.SAMPLE" />
             </intent-filter>
         </activity>
-             <activity
+        <activity
             android:name=".progressbar.ProgressBarListActivity"
             android:label="Main/ProgressBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="com.kelin.commonview.main.SAMPLE" />
             </intent-filter>
-               </activity>
-               <activity
+        </activity>
+        <activity
             android:name=".quickaction.QuickActionListActivity"
             android:label="Main/QuickAction" >
             <intent-filter>
@@ -74,16 +75,32 @@
 
                 <category android:name="com.kelin.commonview.main.SAMPLE" />
             </intent-filter>
-
         </activity>
-           <activity
+        <activity
             android:name=".quickaction.CustomQuickActionActivity"
             android:label="QuickAction/CustomQuickAction" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="com.kelin.commonview.quickaction.SAMPLE" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".titlebar.SimpleTitleBarActivity"
+            android:label="TitleBar/SimpleTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="com.kelin.commonview.titlebar.SAMPLE" />
+            </intent-filter>
+        </activity>
+          <activity
+            android:name=".titlebar.TitleBarListActivity"
+            android:label="Main/TitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.kelin.commonview.main.SAMPLE" />
+            </intent-filter>
         </activity>
     </application>
 

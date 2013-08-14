@@ -14,4 +14,6 @@
     <bool name="default_circle_indicator_snap">false</bool>
     <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
     <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    
+        <color name="common_white_shadow">#414141</color>
 </resources>

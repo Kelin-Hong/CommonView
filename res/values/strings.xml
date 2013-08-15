@@ -4,6 +4,9 @@
     <string name="app_name">CommonView</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-       <string name="new_function_tip" translatable="false">New</string>
+    <string name="new_function_tip" translatable="false">New</string>
+    <string name="pulldown_refreshing">正在加载..</string>
+    <string name="pulldown_pull">下拉刷新</string>
+    <string name="pulldown_release">松开刷新</string>
 
 </resources>

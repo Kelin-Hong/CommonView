@@ -70,7 +70,7 @@ public class PullToRefreshListView extends ListView {
     public PullToRefreshListView(Context context) {
         this(context, null);
     }
-
+    
     public PullToRefreshListView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);
@@ -79,6 +79,7 @@ public class PullToRefreshListView extends ListView {
     private void init(Context context, AttributeSet attrs) {
         setHeaderDividersEnabled(false);
         Resources resources = getResources();
+        
         mTriggerRefreshHeight = resources
                 .getDimensionPixelSize(R.dimen.pulldown_trigger_refresh_height);
         mPullHeader = LayoutInflater.from(getContext()).inflate(R.layout.pulldown_header, null);
@@ -119,7 +120,6 @@ public class PullToRefreshListView extends ListView {
             case MotionEvent.ACTION_DOWN:
                 if (mPullDownEnabled) {
                     mCanRefresh = false;
-                    // �������б����ʱ����¼�µ�ǰλ��
                     if (!mIsRefreshing && isOnTop()) {
                         prepareTracking(ev);
                     }
@@ -127,13 +127,10 @@ public class PullToRefreshListView extends ListView {
                 break;
             case MotionEvent.ACTION_MOVE:
                 if (mTracking) {
-                    // ����Ѿ���������״̬����¼�µ�ǰ��ƫ��
                     float curY = ev.getY();
 
-                    // ���ʱ�п��ܻỬ��һ�㣬ѡ�����10����ֹ�����ֲ������гɻ�������
                     if ((curY - mStartY) > 10) {
                         requestDisallowInterceptTouchEvent(true);
-                        // ƫ��λ��������Y�Ử���ľ����һ��Ϊ׼
                         mCurOffsetY = (int) ((curY - mStartY) / 2);
                         if ((mCurOffsetY) < mMaxHeaderHeight) {
                             setContainerHeight(mCurOffsetY);
@@ -153,21 +150,19 @@ public class PullToRefreshListView extends ListView {
                         } else {
                             mCurOffsetY = Math.max(0, mMaxHeaderHeight);
                         }
-                        // ��������ˢ��״̬����Ҫdisable��listview�����¹����������Ҫ�Ե�move��Ϣ
                         ev.setAction(MotionEvent.ACTION_CANCEL);
                         super.dispatchTouchEvent(ev);
                         return true;
                     }
                 } else if (mPullDownEnabled && !mTracking && !mIsRefreshing && isOnTop()) {
-                    // �������б����ʱ����¼�µ�ǰλ��
                     prepareTracking(ev);
                 }
                 break;
-            case MotionEvent.ACTION_UP:
+            case MotionEvent.ACTION_UP:  
+     
             case MotionEvent.ACTION_CANCEL:
-                startBuncingBack();
+              startBuncingBack();
                 if (mTracking) {
-                    // ��ָ�ɿ���������볬����ֵ���򴥷�ˢ��
                     if (mCanRefresh) {
                         if (mRefreshListener != null) {
                             mRefreshListener.onRefresh(PullToRefreshListView.this);
@@ -318,25 +313,22 @@ public class PullToRefreshListView extends ListView {
         });
     }
 
-    /**
-     * ��ʼ�ص�
-     */
     public void startBuncingBack() {
         final ObjectAnimator animator = ObjectAnimator.ofInt(this, "containerHeight", 0);
         animator.setDuration(200);
         animator.start();
-        animator.setEvaluator(new TypeEvaluator<Integer>() {
-
-            @Override
-            public Integer evaluate(float fraction, Integer startValue, Integer endValue) {
-                int result = (int) (startValue - fraction * ((float) startValue - (float) endValue));
-                if (mIsRefreshing && result <= mTriggerRefreshHeight) {
-                    animator.cancel();
-                    result = mTriggerRefreshHeight;
-                }
-                return result;
-            }
-        });
+//        animator.setEvaluator(new TypeEvaluator<Integer>() {
+//
+//            @Override
+//            public Integer evaluate(float fraction, Integer startValue, Integer endValue) {
+//                int result = (int) (startValue - fraction * ((float) startValue - (float) endValue));
+//                if (mIsRefreshing && result <= mTriggerRefreshHeight) {
+//                    animator.cancel();
+//                    result = mTriggerRefreshHeight;
+//                }
+//                return result;
+//            }
+//        });
         animator.addListener(new AnimatorListener() {
 
             @Override

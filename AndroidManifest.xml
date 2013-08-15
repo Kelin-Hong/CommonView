@@ -94,12 +94,40 @@
                 <category android:name="com.kelin.commonview.titlebar.SAMPLE" />
             </intent-filter>
         </activity>
-          <activity
+        <activity
             android:name=".titlebar.TitleBarListActivity"
             android:label="Main/TitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="com.kelin.commonview.main.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".listview.PullToRefreshListViewActivity"
+            android:label="ListView/PullToRefreshListView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.kelin.commonview.listview.SAMPLE" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".listview.ListViewListActivity"
+            android:label="Main/ListView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.kelin.commonview.main.SAMPLE" />
+            </intent-filter>
+        </activity>
+               <activity
+            android:name=".listview.PinnedHeadderListViewActivity"
+            android:label="ListView/PPinnedHeadderListView">
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.kelin.commonview.listview.SAMPLE" />
             </intent-filter>
         </activity>
     </application>

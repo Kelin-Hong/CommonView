@@ -7,7 +7,7 @@
     <FrameLayout
         android:id="@+id/pull_header"
         android:layout_width="match_parent"
-        android:layout_height="0dip"
+        android:layout_height="wrap_content"
         android:gravity="bottom" >
 
         <ImageView
@@ -61,14 +61,13 @@
                         android:id="@+id/pull_header_major_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
                         android:textSize="15dip" />
 
                     <TextView
                         android:id="@+id/pull_header_minor_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
+                        android:textColor="@color/common_white"
                         android:textSize="14dip"
                         android:visibility="gone" />
                 </LinearLayout>

@@ -11,5 +11,14 @@
     <dimen name="pulldown_trigger_refresh_height">50dip</dimen>
     <dimen name="pulldown_header_height">50dip</dimen>
     <dimen name="loading_footer_height">50dip</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+
+    <!-- textsize -->
+    <dimen name="txtsize_small">12sp</dimen>
+    <dimen name="txtsize_middle">14sp</dimen>
+    <dimen name="txtsize_xmiddle">18sp</dimen>
+    <dimen name="txtsize_large">20sp</dimen>
+    <dimen name="txtsize_xlarge">24sp</dimen>
 
 </resources>

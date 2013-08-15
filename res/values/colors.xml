@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-       <color name="common_white">#ffffff</color>
-       <color name="tab_indicator_text_unselected">#aac5d7</color>
-       <color name="tab_indicator_text_selected">#70b50d</color>
-       <color name="page_viewer_margin_color">#053e5d</color>
-       
-       
+
+    <color name="common_white">#ffffff</color>
+    <color name="tab_indicator_text_unselected">#aac5d7</color>
+    <color name="tab_indicator_text_selected">#70b50d</color>
+    <color name="page_viewer_margin_color">#053e5d</color>
+
     <bool name="default_circle_indicator_centered">true</bool>
+
     <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
     <color name="default_circle_indicator_page_color">#00000000</color>
+
     <integer name="default_circle_indicator_orientation">0</integer>
-    <dimen name="default_circle_indicator_radius">3dp</dimen>
     <bool name="default_circle_indicator_snap">false</bool>
+
     <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
-    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
-    
-        <color name="common_white_shadow">#414141</color>
+    <color name="common_white_shadow">#414141</color>
+     <color name="transparent">#00ffffff</color>
+
+    <!-- classColor -->
+    <color name="classA">#1f1f1f</color>
+    <color name="classB">#353535</color>
+    <color name="classC">#707173</color>
+    <color name="classD">#dddddd</color>
+    <color name="classE">#d4cfca</color>
+    <color name="classF">#de020d</color>
+    <color name="classG">#6a885d</color>
+    <color name="classH">#eeec1e</color>
+
 </resources>

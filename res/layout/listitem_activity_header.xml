@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_header_date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/classC"
+    android:clickable="true"
+    android:padding="5dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/header_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dip"
+        android:textColor="@color/common_white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/header_day_of_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dip"
+        android:textColor="@color/classG"
+        android:textSize="14sp" />
+    
+</LinearLayout>

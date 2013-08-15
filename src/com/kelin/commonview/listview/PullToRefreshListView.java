@@ -3,7 +3,6 @@ package com.kelin.commonview.listview;
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
 import android.animation.ObjectAnimator;
-import android.animation.TypeEvaluator;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -14,13 +13,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.AbsListView;
+import android.widget.AbsListView.OnScrollListener;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.kelin.commonview.R;
+import com.kelin.commonview.listview.LoadingFooter.State;
 
-public class PullToRefreshListView extends ListView {
+public class PullToRefreshListView extends ListView implements OnScrollListener{
     private int mTriggerRefreshHeight;
 
     private boolean mTracking = false;
@@ -36,6 +38,8 @@ public class PullToRefreshListView extends ListView {
     private boolean mCanRefresh = false;
 
     private PullDownStateListener mRefreshListener;
+    
+    private PullUpStateListener mPullUpListener;
 
     private View mPullHeader = null;
 
@@ -66,6 +70,8 @@ public class PullToRefreshListView extends ListView {
     private ImageView mIndicator;
 
     private ViewGroup.LayoutParams mContainerLayoutParams;
+    
+    protected LoadingFooter mLoadingFooter;
 
     public PullToRefreshListView(Context context) {
         this(context, null);
@@ -79,7 +85,9 @@ public class PullToRefreshListView extends ListView {
     private void init(Context context, AttributeSet attrs) {
         setHeaderDividersEnabled(false);
         Resources resources = getResources();
-        
+        mLoadingFooter=new LoadingFooter(context);
+        mLoadingFooter.setState(State.Idle);
+        addFooterView(mLoadingFooter.getView());
         mTriggerRefreshHeight = resources
                 .getDimensionPixelSize(R.dimen.pulldown_trigger_refresh_height);
         mPullHeader = LayoutInflater.from(getContext()).inflate(R.layout.pulldown_header, null);
@@ -109,8 +117,30 @@ public class PullToRefreshListView extends ListView {
 
         mAnimRotateBack = AnimationUtils.loadAnimation(getContext(), R.anim.rotate_back_180);
         mAnimRotateBack.setFillAfter(true);
+        this.setOnScrollListener(this);
     }
+    
+    public LoadingFooter getLoadingFooter(){
+    	return mLoadingFooter;
+    }
+    
+    @Override
+    public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount,
+            int totalItemCount) {
 
+        if (mLoadingFooter.getState() == State.Loading || mLoadingFooter.getState() == State.TheEnd) {
+            return;
+        }
+        if (firstVisibleItem + visibleItemCount >= totalItemCount
+                && totalItemCount != 0
+                && totalItemCount != getHeaderViewsCount()
+                        + getFooterViewsCount()) {
+            mLoadingFooter.setState(State.Loading);
+            if(mPullUpListener!=null){
+            	mPullUpListener.onLoadMore(PullToRefreshListView.this);
+            }
+        }
+    }
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         if (!mCanPullDown) {
@@ -200,6 +230,7 @@ public class PullToRefreshListView extends ListView {
         return getFirstVisiblePosition() <= 0 && mFirstHeader.getTop() >= 0;
     }
 
+   
     private void prepareTracking(MotionEvent ev) {
         mMajorText.setText(mPullString);
         mTracking = true;
@@ -253,6 +284,9 @@ public class PullToRefreshListView extends ListView {
     public void setPullDownStateListener(PullDownStateListener listener) {
         mRefreshListener = listener;
     }
+    public void setPullUpStateListener(PullUpStateListener listener) {
+        mPullUpListener = listener;
+    }
 
     public boolean isRefreshing() {
         return mIsRefreshing;
@@ -285,7 +319,7 @@ public class PullToRefreshListView extends ListView {
         }
     }
 
-    public void animateExpand() {
+	public void animateExpand() {
         final ObjectAnimator animator = ObjectAnimator.ofInt(this, "containerHeight",
                 mTriggerRefreshHeight);
         animator.setDuration(200);
@@ -363,4 +397,21 @@ public class PullToRefreshListView extends ListView {
 
         }
     }
+
+    public static abstract class PullUpStateListener {
+        public void onPullUpStarted(final PullToRefreshListView listView) {
+
+        }
+
+        public abstract void onLoadMore(final PullToRefreshListView listView);
+
+        public void onBouncingEnd(final PullToRefreshListView listView) {
+
+        }
+    }
+	@Override
+	public void onScrollStateChanged(AbsListView view, int scrollState) {
+		// TODO Auto-generated method stub
+		
+	}
 }

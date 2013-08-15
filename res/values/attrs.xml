@@ -42,4 +42,9 @@
     <attr name="selectedColor" format="color" />
     <attr name="strokeWidth" format="dimension" />
     <attr name="unselectedColor" format="color" />
+    
+    <declare-styleable name="SmartDrawer">
+        <attr name="init_open" format="boolean" />
+        <attr name="init_height" format="dimension" />
+    </declare-styleable>
 </resources>

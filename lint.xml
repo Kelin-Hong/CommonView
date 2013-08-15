@@ -2,5 +2,6 @@
 <lint>
     <issue id="NewApi">
         <ignore path="src/com/kelin/commonview/listview/PullToRefreshListView.java" />
+        <ignore path="src/com/kelin/commonview/smartdrawer/SmartDrawer.java" />
     </issue>
 </lint>

@@ -40,5 +40,13 @@
         <item name="android:shadowColor">@color/common_white_shadow</item>
         <item name="android:textColor">#dff1ff</item>
     </style>
-     
+          <style name="QuickActionAboveAnimation">
+        <item name="android:windowEnterAnimation">@anim/quickaction_above_enter</item>
+        <item name="android:windowExitAnimation">@anim/quickaction_above_exit</item>
+    </style>
+
+    <style name="QuickActionBelowAnimation">
+        <item name="android:windowEnterAnimation">@anim/quickaction_below_enter</item>
+        <item name="android:windowExitAnimation">@anim/quickaction_below_exit</item>
+    </style>
 </resources>

@@ -130,6 +130,15 @@
                 <category android:name="com.kelin.commonview.listview.SAMPLE" />
             </intent-filter>
         </activity>
+             <activity
+            android:name=".smartdrawer.SmartDrawerActivity"
+            android:label="Main/SmartDrawer" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.kelin.commonview.main.SAMPLE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

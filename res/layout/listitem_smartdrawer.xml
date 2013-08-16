@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+     xmlns:app="http://schemas.android.com/apk/res-auto"  
+    >
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/listitem_middle_margin"
+        android:layout_marginRight="@dimen/listitem_middle_margin"
+        android:layout_marginTop="@dimen/listitem_standard_margin"
+        android:layout_marginBottom="@dimen/listitem_middle_margin"
+        android:src="@drawable/conn_no_photo"
+        />
+ <RelativeLayout 
+    android:id="@+id/name_school_layout"
+    android:layout_toRightOf="@id/avatar"
+    android:layout_alignTop="@id/avatar"
+    android:layout_alignBottom="@id/avatar"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+   >
+    <TextView
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/txtsize_middle"
+        android:text="kelin hong"
+        android:singleLine="true"
+       />
+    <TextView
+        android:id="@+id/school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txtsize_small"
+        android:text="hust, wuhan"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+         />
+    </RelativeLayout>
+     <ImageView
+        android:id="@+id/listitem_activity_numbers_img_check"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_check"
+        />
+    <com.kelin.commonview.smartdrawer.SmartDrawer
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+      
+        android:layout_height="50dip"
+        android:layout_below="@id/avatar"
+        android:orientation="vertical"
+        app:init_height="50dip"
+        app:init_open="false">
+     <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/classB"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/listitem_activity_numbers_drawer_btn_like"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="dismissSmartDrawer"
+                android:clickable="true"
+                android:gravity="center"
+                android:background="@drawable/dtoe_selector">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_call" />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" 
+                    android:text="mumber"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listitem_activity_numbers_drawer_btn_chat"
+                android:layout_width="0dp"
+                android:clickable="true"
+                 android:onClick="dismissSmartDrawer"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/dtoe_selector" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_chat" />
+                 <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" 
+                    android:text="message"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listitem_activity_numbers_drawer_btn_zone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                 android:onClick="dismissSmartDrawer"
+                android:gravity="center"
+                android:background="@drawable/dtoe_selector" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_zone" />
+                 <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" 
+                    android:text="zone"/>
+            </LinearLayout>
+            
+       
+        </LinearLayout>
+        
+    </com.kelin.commonview.smartdrawer.SmartDrawer>
+
+     
+</RelativeLayout>
+

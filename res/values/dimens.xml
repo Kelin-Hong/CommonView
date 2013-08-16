@@ -20,5 +20,16 @@
     <dimen name="txtsize_xmiddle">18sp</dimen>
     <dimen name="txtsize_large">20sp</dimen>
     <dimen name="txtsize_xlarge">24sp</dimen>
+    
+       <!-- listitem -->
+    <dimen name="listitem_tiny_margin">1dp</dimen>
+    <dimen name="listitem_small_margin">3.3dp</dimen>
+    <dimen name="listitem_middle_margin">10dp</dimen>
+    <dimen name="listitem_xlarge_margin">20dp</dimen>
+    <dimen name="listitem_large_margin">13.3dp</dimen>
+    <dimen name="listitem_standard_margin">6.7dp</dimen>
+    <dimen name="listitem_min_height">110dp</dimen>
+    <dimen name="listitem_avatar_footnote">12dp</dimen>
+    <dimen name="listitem_avatar_height">50dp</dimen>
 
 </resources>

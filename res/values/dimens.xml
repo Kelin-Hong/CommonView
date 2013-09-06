@@ -20,8 +20,8 @@
     <dimen name="txtsize_xmiddle">18sp</dimen>
     <dimen name="txtsize_large">20sp</dimen>
     <dimen name="txtsize_xlarge">24sp</dimen>
-    
-       <!-- listitem -->
+
+    <!-- listitem -->
     <dimen name="listitem_tiny_margin">1dp</dimen>
     <dimen name="listitem_small_margin">3.3dp</dimen>
     <dimen name="listitem_middle_margin">10dp</dimen>
@@ -31,9 +31,11 @@
     <dimen name="listitem_min_height">110dp</dimen>
     <dimen name="listitem_avatar_footnote">12dp</dimen>
     <dimen name="listitem_avatar_height">50dp</dimen>
-        <!-- QuickAction -->
-     <dimen name="quickaction_shadow_horiz">0dip</dimen>
+    <!-- QuickAction -->
+    <dimen name="quickaction_shadow_horiz">0dip</dimen>
     <dimen name="quickaction_shadow_vert">30dip</dimen>
     <dimen name="quickaction_shadow_touch">20dip</dimen>
+    <dimen name="large_radius">100dp</dimen>
+    <dimen name="little_radius">55dp</dimen>
 
 </resources>

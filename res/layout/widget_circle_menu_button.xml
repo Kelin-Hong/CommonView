@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/cirlce_menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flashlight_circle_menu_button_bg"
+        android:scaleType="fitXY"
+        android:src="@drawable/flashlight_circle_menu_button_icon" />
+
+    <ImageView
+        android:id="@+id/led_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/flashlight_led_flash_press" />
+
+    <ImageView
+        android:id="@+id/led_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/flashlight_led_light_press" />
+
+    <ImageView
+        android:id="@+id/police_lights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/flashlight_police_lights_press" />
+
+    <ImageView
+        android:id="@+id/screen_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/flashlight_screen_light_press" />
+
+    <ImageView
+        android:id="@+id/warning_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/flashlight_warning_light_press" />
+
+
+</FrameLayout>

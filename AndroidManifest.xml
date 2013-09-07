@@ -58,6 +58,15 @@
                 <category android:name="com.kelin.commonview.progressbar.SAMPLE" />
             </intent-filter>
         </activity>
+          <activity
+            android:name=".progressbar.DotLoadingProgressBarActivity"
+            android:label="ProgressBar/DotLoading" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.kelin.commonview.progressbar.SAMPLE" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".progressbar.ProgressBarListActivity"
             android:label="Main/ProgressBar" >

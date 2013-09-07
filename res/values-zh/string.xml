@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pulldown_refreshing">正在加载..</string>
+    <string name="pulldown_pull">下拉刷新</string>
+    <string name="pulldown_release">松开刷新 </string>
+    <string name="dot_progress_loading_apps_info_des">加载中…</string>
+
+</resources>

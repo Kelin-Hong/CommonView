@@ -12,11 +12,12 @@
     <color name="default_circle_indicator_page_color">#00000000</color>
 
     <integer name="default_circle_indicator_orientation">0</integer>
+
     <bool name="default_circle_indicator_snap">false</bool>
 
     <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
     <color name="common_white_shadow">#414141</color>
-     <color name="transparent">#00ffffff</color>
+    <color name="transparent">#00ffffff</color>
 
     <!-- classColor -->
     <color name="classA">#1f1f1f</color>
@@ -27,5 +28,7 @@
     <color name="classF">#de020d</color>
     <color name="classG">#6a885d</color>
     <color name="classH">#eeec1e</color>
+    <color name="progressbar_dot_loading_mask_color">#c8000000</color>
+    <color name="progressbar_dot_loading_des_text_color">#b3b3b3</color>
 
 </resources>

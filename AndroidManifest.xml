@@ -94,6 +94,15 @@
                 <category android:name="com.kelin.commonview.quickaction.SAMPLE" />
             </intent-filter>
         </activity>
+            <activity
+            android:name=".stylepreference.StylePreferenceActivity"
+            android:label="Main/StylePreference" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.kelin.commonview.main.SAMPLE" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".titlebar.SimpleTitleBarActivity"
             android:label="TitleBar/SimpleTitleBar" >

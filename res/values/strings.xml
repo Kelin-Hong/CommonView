@@ -8,5 +8,8 @@
     <string name="pulldown_refreshing">loading..</string>
     <string name="pulldown_pull">pull to refresh!</string>
     <string name="pulldown_release">release to refresh!</string>
-     
+    <string name="common_state_on">ON</string>
+    <string name="common_state_off">OFF</string>
+    <string name="common_new_function_tip" translatable="false">New</string>
+
 </resources>

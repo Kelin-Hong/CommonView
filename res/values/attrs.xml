@@ -47,4 +47,19 @@
         <attr name="init_open" format="boolean" />
         <attr name="init_height" format="dimension" />
     </declare-styleable>
+    
+      <declare-styleable name="StyleToggleButton">
+        <attr name="textOn" format="string" />
+        <attr name="textOff" format="string" />
+        <attr name="disabledAlpha" format="float" />
+    </declare-styleable>
+    
+      <declare-styleable name="StylePreference">
+        <attr name="layout" format="reference" />
+        <attr name="name" format="string" />
+        <attr name="title" />
+        <attr name="summary" format="string" />
+        <attr name="enabled" format="boolean" />
+        <attr name="type" format="string" />
+    </declare-styleable>
 </resources>

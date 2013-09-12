@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dlg_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_dialog_bkg_with_title"
+    android:minWidth="300dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="42dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/MyWidget.TitleBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:drawableLeft="@drawable/ic_launcher"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/title_right_bg"
+            android:minWidth="52dp"
+            android:scaleType="center"
+            android:src="@drawable/dx_titlebar_settings"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/content_holder"
+        style="@style/MyWidget.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/common_white"
+        android:paddingBottom="12dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="12dp" >
+
+        <LinearLayout
+            android:id="@+id/content_holder2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_dark"
+                android:textSize="@dimen/common_text_size_middle"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/dx_checkbox_btn"
+                android:textColor="@color/common_dark"
+                android:textSize="@dimen/common_text_size_middle"
+                android:visibility="gone" />
+
+            <!-- more views may be added here -->
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/list_header"
+        style="@style/MyWidget.ListHeaderText.Layout"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/list"
+        style="@style/MyWidget.ListView"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/common_white"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/progress_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/progress_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:minWidth="36dp"
+            android:textColor="@color/common_dark"
+            android:textSize="@dimen/common_text_size_middle"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_weight="1"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/progressbar_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <include layout="@layout/common_dialog_buttons" />
+    </LinearLayout>
+
+</LinearLayout>

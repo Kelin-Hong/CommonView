@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="common_white">#ffffff</color>
     <color name="tab_indicator_text_unselected">#aac5d7</color>
     <color name="tab_indicator_text_selected">#70b50d</color>
-    <color name="page_viewer_margin_color">#053e5d</color>
 
     <bool name="default_circle_indicator_centered">true</bool>
 
@@ -16,7 +14,6 @@
     <bool name="default_circle_indicator_snap">false</bool>
 
     <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
-    <color name="common_white_shadow">#414141</color>
     <color name="transparent">#00ffffff</color>
 
     <!-- classColor -->
@@ -30,5 +27,32 @@
     <color name="classH">#eeec1e</color>
     <color name="progressbar_dot_loading_mask_color">#c8000000</color>
     <color name="progressbar_dot_loading_des_text_color">#b3b3b3</color>
+    <color name="common_white">#ffffff</color>
+    <color name="common_white_shadow">#414141</color>
+    <color name="common_white_disabled">#e7e7e7</color>
+    <!-- For main texts -->
+    <color name="common_dark">#3d5562</color>
+    <color name="common_dark_shadow">#dedede</color>
+    <color name="common_dark_disabled">#9aa7af</color>
+    <!-- For secondary texts -->
+    <color name="common_grey">#8496a0</color>
+    <color name="common_grey_disabled">#aabbc4</color>
+    <!-- For danger cases, such as virus, file delete... -->
+    <color name="common_red">#e62f2f</color>
+    <!-- For warning cases, such as trashes... -->
+    <color name="common_yellow">#f1930d</color>
+    <!-- For safe cases -->
+    <color name="common_green">#60990c</color>
+    <!-- For suggestions -->
+    <color name="common_blue">#4b8bbd</color>
+    <color name="common_half_transparent">#b0000000</color>
+    <color name="dx_main_screen_bkg_cache_color">#00000000</color>
+    <color name="page_viewer_margin_color">#053e5d</color>
+    <color name="separator_color">#cdd7dd</color>
+    <color name="circle_progress_info_color">#ff148dd9</color>
+    <color name="circle_progress_warn_color">#fff1ad09</color>
+    <color name="circle_progress_alert_color">#ffff0000</color>
+    <color name="circle_progress_default_color">#ffffffff</color>
+    <color name="circle_progress_green_color">#81c91a</color>
 
 </resources>

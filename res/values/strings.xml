@@ -11,5 +11,12 @@
     <string name="common_state_on">ON</string>
     <string name="common_state_off">OFF</string>
     <string name="common_new_function_tip" translatable="false">New</string>
+    <string name="common_ok">OK</string>
+    <string name="common_apply">Apply</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="language_cn" translatable="false">简体中文</string>
+    <string name="language_en" translatable="false">English</string>
+    <string name="language_tw" translatable="false">繁體中文</string>
+    <string name="language_auto">Automatic</string>
 
 </resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text"
+    style="@style/MyWidget.CommonDialogListText"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_dialog_list_item_height"
+    android:background="@drawable/common_list_item_bkg"
+    android:checkMark="@drawable/radiobox"
+    android:textColor="@color/common_dark"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp" />

@@ -7,7 +7,6 @@
     <!-- Modules specific dimensions -->
     <dimen name="quickaction2_separator_height">2px</dimen>
     <dimen name="quickaction2_line_height">40dp</dimen>
-    <dimen name="status_bar_height">25dip</dimen>
     <dimen name="pulldown_trigger_refresh_height">50dip</dimen>
     <dimen name="pulldown_header_height">50dip</dimen>
     <dimen name="loading_footer_height">50dip</dimen>
@@ -37,5 +36,52 @@
     <dimen name="quickaction_shadow_touch">20dip</dimen>
     <dimen name="large_radius">100dp</dimen>
     <dimen name="little_radius">55dp</dimen>
+    
+      <!-- Android OS dimensions -->
+    <dimen name="app_icon_size">48dp</dimen>
+    <dimen name="status_bar_height">25dip</dimen>
+    
+    <!-- DX  common dimen -->
+    <!-- For buttons -->
+    <dimen name="common_text_size_large">18dp</dimen>
+    <!-- For list texts (top line) -->
+    <dimen name="common_text_size_middle">16dp</dimen>
+    <dimen name="common_text_size_middle_2">14dp</dimen>
+    <!-- For list texts (bottom line), summary texts, icon texts, descriptions, tag texts -->
+    <dimen name="common_text_size_small">13dp</dimen>
+    <dimen name="common_text_size_small_2">10dp</dimen>
+    <dimen name="common_text_size_small_3">12dp</dimen>
+
+    <dimen name="common_list_header_height">30dp</dimen>
+    <dimen name="common_list_header_padding_left">8dp</dimen>
+    <dimen name="common_list_item_height">56dp</dimen>
+    <dimen name="common_list_item_left_padding">10dp</dimen>
+    <dimen name="common_list_item_right_padding">10dp</dimen>
+    <dimen name="common_list_item_app_icon_size">40dp</dimen>
+    <dimen name="common_list_item_app_icon_right_margin">6dp</dimen>
+    <dimen name="common_list_item_app_icon_left_margin">8dp</dimen>
+    <dimen name="common_list_item_two_line_first_top_margin">6dp</dimen>
+    <dimen name="common_list_item_two_line_second_top_margin">2dp</dimen>
+    <dimen name="common_list_item_text_left_margin">12dp</dimen>
+    <dimen name="common_list_sperator_height">2px</dimen>
+
+    <dimen name="common_action_button_width">52dp</dimen>
+    <dimen name="common_action_button_height">56dp</dimen>
+
+    <dimen name="common_module_feature_icon_size">32dp</dimen>
+    <dimen name="common_page_bottom_one_button_margin">50dp</dimen>
+
+    <dimen name="common_dialog_list_item_height">48dp</dimen>
+
+    <dimen name="common_expandable_list_padding_left">40dp</dimen>
+    <dimen name="common_expandable_list_group_indicator_left">10dp</dimen>
+
+    <dimen name="common_page_shadow_height">6dp</dimen>
+    <dimen name="common_page_header_height">140dp</dimen>
+    <dimen name="common_page_header_height_2">128dp</dimen>
+    <dimen name="common_module_page_margin_left">6dp</dimen>
+    <dimen name="common_module_page_margin_right">6dp</dimen>
+    <dimen name="common_module_page_margin_top">8dp</dimen>
+    <dimen name="common_module_page_margin_bottom">8dp</dimen>
 
 </resources>

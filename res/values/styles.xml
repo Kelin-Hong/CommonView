@@ -1,5 +1,6 @@
 <resources>
-<style name="MyWidget" parent="@android:style/Theme" />
+
+    <style name="MyWidget" parent="@android:style/Theme" />
     <!--
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -16,8 +17,8 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    
-     <style name="MyWidget.TabText">
+
+    <style name="MyWidget.TabText">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/tab_indicator_text</item>
         <item name="android:singleLine">true</item>
@@ -40,7 +41,8 @@
         <item name="android:shadowColor">@color/common_white_shadow</item>
         <item name="android:textColor">#dff1ff</item>
     </style>
-          <style name="QuickActionAboveAnimation">
+
+    <style name="QuickActionAboveAnimation">
         <item name="android:windowEnterAnimation">@anim/quickaction_above_enter</item>
         <item name="android:windowExitAnimation">@anim/quickaction_above_exit</item>
     </style>
@@ -48,5 +50,68 @@
     <style name="QuickActionBelowAnimation">
         <item name="android:windowEnterAnimation">@anim/quickaction_below_enter</item>
         <item name="android:windowExitAnimation">@anim/quickaction_below_exit</item>
+    </style>
+
+    <style name="MyWidget.ScrollView" parent="MyWidget.AdapterView">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="MyWidget.ListHeaderText">
+        <item name="android:textSize">@dimen/common_text_size_middle_2</item>
+        <item name="android:textColor">#6d838f</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="MyWidget.ListHeaderText.Layout" parent="@style/MyWidget.ListHeaderText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_list_header_height</item>
+        <item name="android:paddingLeft">@dimen/common_list_header_padding_left</item>
+        <item name="android:background">@drawable/dx_list_header_bkg</item>
+    </style>
+
+    <style name="MyWidget.AdapterView">
+        <item name="android:fadingEdgeLength">0dp</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_handle_vertical</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+    </style>
+
+    <style name="MyWidget.ListView" parent="MyWidget.AdapterView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:cacheColorHint">@color/dx_main_screen_bkg_cache_color</item>
+        <item name="android:divider">@drawable/dx_main_screen_list_sep</item>
+        <item name="android:dividerHeight">2px</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:fadeScrollbars">true</item>
+    </style>
+
+    <!-- Common button styles -->
+    <style name="MyWidget.BigButton">
+        <item name="android:layout_height">38dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="MyWidget.BigButton.Green">
+        <item name="android:background">@drawable/dx_btn_green_big</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:shadowColor">@color/common_white_shadow</item>
+    </style>
+
+    <style name="MyWidget.BigButton.White">
+        <item name="android:background">@drawable/dx_btn_white_big</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:shadowColor">@color/common_dark_shadow</item>
+    </style>
+  <!-- Common dialog styles -->
+    <style name="MyWidget.CommonDialogListText">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="MyWidget.CommonDialogListText.Multiline">
+        <item name="android:singleLine">false</item>
     </style>
 </resources>

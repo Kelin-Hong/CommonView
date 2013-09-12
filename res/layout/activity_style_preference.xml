@@ -41,6 +41,16 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 app:type="switch" />
+
+            <include layout="@layout/divider_settings" />
+
+
+            <com.kelin.commonview.stylepreference.StylePreference
+                app:name="language"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:enabled="false"
+                app:type="switch" />
         </LinearLayout>
     </LinearLayout>
 

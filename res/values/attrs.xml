@@ -57,7 +57,7 @@
       <declare-styleable name="StylePreference">
         <attr name="layout" format="reference" />
         <attr name="name" format="string" />
-        <attr name="title" />
+        <attr name="title" format="string"/>
         <attr name="summary" format="string" />
         <attr name="enabled" format="boolean" />
         <attr name="type" format="string" />
